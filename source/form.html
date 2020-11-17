@@ -7,8 +7,8 @@
   <body class="page__body">
     <header class ="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo--small" src="https://via.placeholder.com/150x150" width="34" height="38" alt="Логотип компании, изображающий кота">
+        <a class="page-header__logo page-header__logo--small">
+          <img class="page-header__img" src="https://via.placeholder.com/150x150" width="34" height="38" alt="Логотип компании, изображающий кота">
         </a>
         <a class="page-header__logo-text logo">
         CAT ENERGY <!--Здесь вместо текста будет логотип в формате свг-->
@@ -41,7 +41,7 @@
               <label class="form__label form__name">Имя
                 <input class="form__input form__input--name" type="text" name="name" placeholder="Барсик" required>
               </label>
-              <label class="form__label form__weight weight">Вес (кг)*
+              <label class="form__label form__weight">Вес (кг)*
                 <input class="form__input form__input--weight" type="number" name="weight" placeholder="7" required>
               </label>
               <label class="form__label form__age">Возраст (лет)
@@ -49,8 +49,8 @@
               </label>
             </fieldset>
             <fieldset class="form__fieldset form__purpose">
-              <label class="form__slim">
-                <input class="form__label form__input form__input--slim" type="radio" name="choose-purpose" value="slim" checked>Похудение
+              <label class="form__label form__slim">
+                <input class="form__input form__input--slim" type="radio" name="choose-purpose" value="slim" checked>Похудение
               </label>
               <label class="form__label form__strong">
                 <input class="form__input form__input--strong" type="radio" name="choose-purpose" value="srtong">Набор массы
@@ -90,7 +90,7 @@
               </label>
             </fieldset>
             <button class="form__button button" type="submit">отправить заявку</button>
-            <p class="form__text--important">* — Обязательные поля</p>
+            <p class="form__text form__text--important">* — Обязательные поля</p>
           </form>
         </div>
       </section>
