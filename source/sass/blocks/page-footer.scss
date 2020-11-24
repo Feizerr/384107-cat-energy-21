@@ -1,0 +1,14 @@
+.page-footer {
+  background-color: $basic-grey;
+  padding-bottom: 32px;
+}
+
+.page-footer__wrapper {
+  min-width: 280px;
+  @include margin(19px, 19px);
+}
+
+.page-footer__logo {
+  display: block;
+  padding-top: 39.31px;
+}

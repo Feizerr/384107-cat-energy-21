@@ -1,0 +1,23 @@
+.instruction {
+  margin-bottom: 42px;
+}
+
+.instruction__wrapper {
+  min-width: 280px;
+  @include margin(20px, 20px);
+}
+
+.instruction__title {
+  @include osvald(400);
+  @include fonts(36px, 40px);
+  @include offset(0, 0);
+  margin-bottom: 38px;
+}
+
+.instruction__list {
+  @include list-reset();
+}
+
+.instruction__item {
+    padding-left: 60px;
+}

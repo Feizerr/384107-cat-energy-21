@@ -1,0 +1,11 @@
+.social__list {
+  @include list-reset();
+}
+
+.social__item {
+  @include offset(0, 0);
+}
+
+social__link {
+  @include link();
+}

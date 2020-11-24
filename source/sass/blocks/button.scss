@@ -1,0 +1,11 @@
+.button {
+  display: block;
+  @include link();
+  padding: 7px 44px 7px 44px;
+  text-align: center;
+  background-color: $basic-green;
+  color: $basic-white;
+  @include osvald(400);
+  text-transform: uppercase;
+}
+

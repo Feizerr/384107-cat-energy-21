@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class ="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo page-header__logo--small">
-          <img class="page-header__img" src="https://via.placeholder.com/150x150" width="34" height="38" alt="Логотип компании, изображающий кота">
+          <img class="page-header__img" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип компании, изображающий кота">
         </a>
         <a class="page-header__logo-text logo">
         CAT ENERGY <!--Здесь вместо текста будет логотип в формате свг-->
@@ -18,14 +19,14 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item-active">
-              <a>Главная</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__item-active">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="program.html">Подбор программы</a>
+              <a class="main-nav__link" href="program.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -36,7 +37,7 @@
         <div class="promo__wrapper">
           <h1 class="promo__main-title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__image-food" src="https://via.placeholder.com/150x150" width="280" height="270" alt="Корм Cat Energy с курицей, 0% натуральности">
+          <img class="promo__image-food" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Корм Cat Energy с курицей, 0% натуральности">
           <a class="promo__button button" href="program.html">Подобрать программу</a>
         </div>
       </section>
@@ -87,10 +88,10 @@
         <div class="example__slider slider">
           <ul class="slider__list">
             <li class="slider__item slider__item--current">
-              <img class="slider__img" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Кот Борис до диеты">
+              <img class="slider__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Кот Борис до диеты">
             </li>
             <li class="slider__item">
-              <img class="slider__img" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Кот Борис после диеты">
+              <img class="slider__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Кот Борис после диеты">
             </li>
           </ul>
           <div class="slider__box">
@@ -115,7 +116,7 @@
         </div>
       </section>
       <div class="page-footer__map">
-        <img class="page-footer__img" src="https://via.placeholder.com/150x150" width="320" height="362" alt="Карта с отображением месторасположения офиса">
+        <img class="page-footer__img" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Карта с отображением месторасположения офиса">
       </div>
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo">
@@ -139,7 +140,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a href="copyrigth__link">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p>HTML Academy</p>
             <!-- здесь будет svg-иконка с логотипом компании HTML Academy -->
           </a>
