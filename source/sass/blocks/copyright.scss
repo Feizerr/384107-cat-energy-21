@@ -1,0 +1,9 @@
+.copyright {
+  margin-bottom: 32px;
+}
+
+.copyright__link {
+  @include link();
+  @include fonts(16px, 19px);
+  color: $special-dark-grey;
+}

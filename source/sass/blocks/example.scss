@@ -1,0 +1,42 @@
+.example {
+  margin-bottom: 25px;
+}
+
+.example__wrapper {
+  min-width: 280px;
+  @include margin(20px, 20px);
+}
+
+.example__title {
+  @include osvald(400);
+  @include fonts(36px, 40px);
+  @include offset(0, 0);
+  margin-bottom: 38px;
+}
+
+.example__number,
+.example__facts {
+  @include osvald(400);
+  text-transform: uppercase;
+  @include offset(0, 0);
+}
+
+.example__number {
+@include fonts(24px, 24px);
+}
+
+.example__facts {
+@include fonts(14px, 20px);
+margin-bottom: 42px;
+}
+
+.slider__list {
+  @include list-reset();
+}
+
+.slider__text {
+  @include osvald(400);
+  text-transform: uppercase;
+  @include fonts(16px, 20px);
+  @include offset(0, 0);
+}
