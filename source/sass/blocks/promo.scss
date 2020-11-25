@@ -2,9 +2,8 @@
   @include osvald(400);
   color: $basic-white;
   margin-bottom: 20px;
-  background-image: url('../img/background-desktop.png');
+  background-image: url('../img/cat.png');
   background-repeat: no-repeat;
-  @include background($basic-green, 0.85);
 }
 
 .promo__wrapper {

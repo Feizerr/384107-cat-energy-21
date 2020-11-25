@@ -1,0 +1,22 @@
+.choose-program {
+  margin-bottom: 32px;
+  @include osvald(400);
+}
+
+.choose-program__wrapper {
+  min-width: 280px;
+  @include margin(19px, 20px);
+}
+
+.choose-program__title {
+  @include fonts(36px, 40px);
+  @include offset(0, 0);
+  margin-bottom: 37px;
+}
+
+.choose-program__text {
+  @include fonts(14px, 18px);
+  text-transform: uppercase;
+  @include offset(0, 0);
+  margin-bottom: 39px;
+}

@@ -1,0 +1,72 @@
+fieldset {
+  border: none;
+  @include offset(0, 0);
+}
+
+.form__label,
+input::placeholder,
+textarea::placeholder {
+  @include osvald(400);
+  @include fonts(14px, 18px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  @include offset(0, 0);
+}
+
+.form__label:not(:last-of-type) {
+  margin-bottom: 14px;
+  display: block;
+}
+
+.form__input {
+  border: 1px solid $special-light-grey;
+  box-sizing: border-box;
+  @include offset(0, 0);
+}
+
+.form__input-info,
+.form__input-owner {
+  min-height: 45px;
+}
+
+.form__input-info {
+  border-color: $the-lightest-grey;
+}
+
+.form__label-radio{
+  color: $almost-black;
+  margin-bottom: 13px;
+}
+
+.form__message-field {
+  min-width: 280px;
+  min-height: 150px;
+}
+
+.form__info {
+  margin-bottom: 32px;
+}
+
+.form__purpose {
+  margin-bottom: 38px;
+}
+
+.form__owner,
+.form__comment {
+  margin-bottom: 27px;
+}
+
+.form__aditional {
+  margin-bottom: 41px;
+}
+
+.form__button {
+  margin-bottom: 21px;
+}
+
+.form__text {
+  font-family: 'Arial', sans-serif;
+  @include fonts(14px, 16px);
+  @include offset(0, 0);
+  margin-bottom: 32px;
+}
