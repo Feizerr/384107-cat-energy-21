@@ -4,6 +4,7 @@
 
 .instruction__wrapper {
   min-width: 280px;
+
   @include margin(20px, 20px);
 }
 
@@ -19,5 +20,5 @@
 }
 
 .instruction__item {
-    padding-left: 60px;
+  padding-left: 60px;
 }

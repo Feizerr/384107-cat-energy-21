@@ -1,15 +1,17 @@
 fieldset {
   border: none;
+
   @include offset(0, 0);
 }
 
 .form__label,
 input::placeholder,
 textarea::placeholder {
-  @include osvald(400);
-  @include fonts(14px, 18px);
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @include osvald(400);
+  @include fonts(14px, 18px);
   @include offset(0, 0);
 }
 
@@ -21,6 +23,7 @@ textarea::placeholder {
 .form__input {
   border: 1px solid $special-light-grey;
   box-sizing: border-box;
+
   @include offset(0, 0);
 }
 
@@ -33,7 +36,7 @@ textarea::placeholder {
   border-color: $the-lightest-grey;
 }
 
-.form__label-radio{
+.form__label-radio {
   color: $almost-black;
   margin-bottom: 13px;
 }
@@ -65,7 +68,8 @@ textarea::placeholder {
 }
 
 .form__text {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
+
   @include fonts(14px, 16px);
   @include offset(0, 0);
   margin-bottom: 32px;

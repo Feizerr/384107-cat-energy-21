@@ -4,16 +4,17 @@
 
 .programs__wrapper {
   min-width: 280px;
+
   @include margin(20px, 20px);
 }
 
 .programs__list {
-  @include list-reset()
+  @include list-reset();
 }
 
 .programs__item {
-    background-color: $basic-grey;
-    margin-bottom: 20px;
+  background-color: $basic-grey;
+  margin-bottom: 20px;
 }
 
 .programs__title {

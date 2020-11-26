@@ -4,8 +4,8 @@
 }
 
 @mixin osvald($weight) {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: $weight;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: $weight;
 }
 
 @mixin offset($padding, $margin) {

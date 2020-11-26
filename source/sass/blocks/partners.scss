@@ -6,12 +6,14 @@
 
 .partners__wrapper {
   min-width: 280px;
+
   @include margin(19px, 19px);
 }
 
 .partners__title {
-  @include osvald(400);
   text-transform: uppercase;
+
+  @include osvald(400);
   @include fonts(16px, 18px);
   @include size(140px, 64px);
   @include offset(0, 0);
@@ -21,5 +23,4 @@
   @include fonts(14px, 20px);
   @include size(140px, 60px);
   @include offset(0, 0);
-
 }
