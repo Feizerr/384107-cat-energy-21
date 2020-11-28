@@ -1,1 +1,13 @@
-/*Здесь будут общие правила для page-header*/
+.page-main__wrapper {
+  min-width: 280px;
+
+  @include margin(19px, 19px);
+}
+
+.page-main__main-title {
+  @include osvald(400);
+  @include fonts(36px, 36px);
+  @include offset(0, 0);
+  font-weight: 400;
+  margin-bottom: 60px;
+}
