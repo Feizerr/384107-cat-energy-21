@@ -1,6 +1,7 @@
 .button {
   @include link();
   @include osvald(400);
+  @include fonts(16px, 20px);
   color: $basic-white;
   text-transform: uppercase;
   text-align: center;

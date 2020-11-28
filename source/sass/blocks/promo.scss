@@ -22,3 +22,7 @@
 .promo__text {
   line-height: 14px;
 }
+
+.promo__button {
+  @include fonts(14px, 18px);
+}
