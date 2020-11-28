@@ -7,4 +7,13 @@
   display: block;
   padding: 7px 44px 7px 44px;
   background-color: $basic-green;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: rgba($basic-white, 0.3);
+  }
 }

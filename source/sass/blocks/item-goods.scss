@@ -1,1 +1,21 @@
-/*здесь будет разметка каталога*/
+.item-goods__title {
+  @include osvald(400);
+  @include fonts(16px, 16px);
+  @include offset(0, 0);
+  text-transform: uppercase;
+  color: $almost-black;
+  margin-bottom: 13px;
+}
+
+.item-goods__container {
+  margin-bottom: 15px;
+}
+
+.item-goods__amount {
+  @include offset(0, 0);
+  color: $special-dark-grey;
+}
+
+.item-goods__button {
+  margin-bottom: 31px;
+}

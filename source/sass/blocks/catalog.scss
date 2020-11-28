@@ -1,1 +1,50 @@
-/*здесь будет разметка каталога*/
+.catalog__list {
+  @include list-reset();
+}
+
+.catalog__item:nth-last-of-type(2) {
+  margin-bottom: 103px;
+}
+
+.catalog__food {
+  @include osvald(400);
+  @include fonts(16px, 20px);
+  @include offset(0, 0);
+  text-transform: uppercase;
+  color: $almost-black;
+  margin-bottom: 14px;
+}
+
+.catalog__text {
+  @include fonts(12px, 16px);
+  @include offset(0, 0);
+  margin-bottom: 21px;
+}
+
+.catalog__button {
+  margin-bottom: 44px;
+}
+
+.catalog__show-more {
+  margin-bottom: 8px;
+}
+
+.catalog__button-more {
+  @include offset(0, 0);
+  color: $almost-black;
+  background-color: $basic-grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  min-width: 279px;
+  border: none;
+
+  &:hover {
+    background-color: $light-grey;
+  }
+
+  &:active {
+    background-color: $light-grey;
+    color: rgba($almost-black, 0.3);
+  }
+}
