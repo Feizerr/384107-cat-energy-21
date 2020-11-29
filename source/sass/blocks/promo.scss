@@ -2,22 +2,27 @@
   @include osvald(400);
   color: $basic-white;
   margin-bottom: 20px;
-  background-image: url('../img/background-desktop.png');
+  background-image: url("../img/cat.png");
   background-repeat: no-repeat;
-  @include background($basic-green, 0.85);
 }
 
 .promo__wrapper {
   min-width: 280px;
+
   @include margin(20px, 20px);
 }
 
 .promo__main-title {
   @include fonts(36px, 36px);
   font-weight: 400;
+
   @include offset(0, 0);
 }
 
 .promo__text {
   line-height: 14px;
+}
+
+.promo-button {
+  @include fonts(14px, 18px);
 }

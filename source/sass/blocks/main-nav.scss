@@ -12,9 +12,7 @@
 .main-nav__link {
   @include link();
   color: $basic-black;
-}
 
-.main-nav__link {
   &:hover {
     @include color($basic-black, 0.6);
   }

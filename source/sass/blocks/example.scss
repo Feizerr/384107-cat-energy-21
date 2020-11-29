@@ -4,6 +4,7 @@
 
 .example__wrapper {
   min-width: 280px;
+
   @include margin(20px, 20px);
 }
 
@@ -18,16 +19,17 @@
 .example__facts {
   @include osvald(400);
   text-transform: uppercase;
+
   @include offset(0, 0);
 }
 
 .example__number {
-@include fonts(24px, 24px);
+  @include fonts(24px, 24px);
 }
 
 .example__facts {
-@include fonts(14px, 20px);
-margin-bottom: 42px;
+  @include fonts(14px, 20px);
+  margin-bottom: 42px;
 }
 
 .slider__list {
@@ -35,8 +37,9 @@ margin-bottom: 42px;
 }
 
 .slider__text {
-  @include osvald(400);
   text-transform: uppercase;
+
+  @include osvald(400);
   @include fonts(16px, 20px);
   @include offset(0, 0);
 }
