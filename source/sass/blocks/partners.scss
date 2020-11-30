@@ -21,7 +21,7 @@
 }
 
 .partners__address {
-  color: @special-dark-grey;
+  color: $special-dark-grey;
 
   @include fonts(14px, 20px);
   @include size(140px, 60px);

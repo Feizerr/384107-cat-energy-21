@@ -7,7 +7,8 @@
 .page-main__main-title {
   @include osvald(400);
   @include fonts(36px, 36px);
-  @include offset(0, 0);
   font-weight: 400;
+
+  @include offset(0, 0);
   margin-bottom: 60px;
 }

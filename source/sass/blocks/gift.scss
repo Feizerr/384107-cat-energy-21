@@ -1,1 +1,13 @@
-/*здесь будет разметка каталога*/
+.gift {
+  background-image: url("../img/cat-in-the-bag.png");
+  min-height: 289px;
+
+  @include fonts(16px, 20px);
+  color: $basic-white;
+  margin-bottom: 35px;
+}
+
+.gift__text {
+  padding-top: 186px;
+  text-align: center;
+}

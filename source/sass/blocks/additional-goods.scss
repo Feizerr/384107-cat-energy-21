@@ -1,1 +1,19 @@
-/*здесь будет разметка каталога*/
+.additional-goods {
+  margin-bottom: 57px;
+}
+
+.additional-goods__title {
+  @include osvald(400);
+  @include fonts(24px, 24px);
+  @include offset(0, 0);
+  margin-bottom: 49px;
+}
+
+.additional-goods__list {
+  @include list-reset();
+}
+
+.item-goods__amount {
+  @include offset(0, 0);
+  margin-bottom: 49px;
+}
