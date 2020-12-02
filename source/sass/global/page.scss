@@ -8,13 +8,22 @@
   box-sizing: border-box;
 }*/
 
-body {
-  margin: 0 auto;
-  width: 320px;
+.page__body {
+  min-width: 320px;
   background: $basic-white;
   color: $basic-black;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
+
+  @include offset(0, 0);
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
 }

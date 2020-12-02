@@ -18,6 +18,11 @@
   margin-left: $left;
 }
 
+@mixin padding($right, $left) {
+  padding-right: $right;
+  padding-left: $left;
+}
+
 @mixin list-reset() {
   list-style: none;
   padding: 0;

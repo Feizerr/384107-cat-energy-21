@@ -17,8 +17,22 @@
 
 .instruction__list {
   @include list-reset();
+  @include offset(0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .instruction__item {
-  padding-left: 60px;
+  @include offset(0, 0);
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 }

@@ -5,9 +5,14 @@
 }
 
 .partners__wrapper {
-  min-width: 280px;
+  display: flex;
+  justify-content: space-between;
 
-  @include margin(19px, 19px);
+  /*@media(min-width: $desktop-width) {
+    width: 570px;
+    min-height: 201px;
+  }
+  */
 }
 
 .partners__title {

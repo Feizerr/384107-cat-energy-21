@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class ="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper wrapper">
         <a class="page-header__logo page-header__logo--small">
           <img class="page-header__img" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип компании, изображающий кота">
         </a>
@@ -34,7 +35,7 @@
     </header>
     <main class="page-main">
       <section class="promo">
-        <div class="promo__wrapper">
+        <div class="promo__wrapper wrapper">
           <h1 class="promo__main-title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <img class="promo__image-food" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Корм Cat Energy с курицей, 0% натуральности">
@@ -42,7 +43,7 @@
         </div>
       </section>
       <section class="programs">
-        <div class="programs__wrapper">
+        <div class="programs__wrapper wrapper">
           <h2 class="visually-hidden">Программы для подбора корма</h2>
           <ul class="programs__list">
             <li class="programs__item programs__item--skinny-cat">
@@ -59,7 +60,7 @@
         </div>
       </section>
       <section class="instruction">
-        <div class="instruction__wrapper">
+        <div class="instruction__wrapper wrapper">
           <h2 class="instruction__title heading">Как это работает</h2>
           <ul class="instruction__list">
             <li class="instruction__item instruction__item--leaf">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -70,20 +71,22 @@
         </div>
       </section>
       <section class="example">
-        <div class="example__wrapper">
+        <div class="example__wrapper wrapper">
           <h2 class="example__title heading">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="example__statistics">
-            <div class="example__item">
-              <dt class="example__number">5 КГ</dt>
-              <dd class="example__description">снижение веса</dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__number">60 ДНЕЙ</dt>
-              <dd class="example__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="example__facts">Затраты на питание: 15 000 РУБ.</p>
+          <div class="example__legend">
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="example__statistics">
+              <div class="example__item">
+                <dt class="example__number">5 КГ</dt>
+                <dd class="example__description">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__number">60 ДНЕЙ</dt>
+                <dd class="example__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="example__facts">Затраты на питание: 15 000 РУБ.</p>
+          </div>
         </div>
         <div class="example__slider slider">
           <ul class="slider__list">
@@ -94,15 +97,17 @@
               <img class="slider__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Кот Борис после диеты">
             </li>
           </ul>
-          <div class="slider__box">
-            <div class="slider__controls">
-              <p class="slider__text">Было</p>
-            </div>
-            <div class="slider__scale">
-              <div class="slider__bar"></div>
-            </div>
-            <div class="slider__controls">
-              <p class="slider__text">Стало</p>
+          <div class="example__wrapper wrapper">
+            <div class="slider__box">
+              <div class="slider__controls">
+                <p class="slider__text">Было</p>
+              </div>
+              <div class="slider__scale">
+                <div class="slider__bar"></div>
+              </div>
+              <div class="slider__controls">
+                <p class="slider__text">Стало</p>
+              </div>
             </div>
           </div>
         </div>
@@ -110,40 +115,42 @@
     </main>
     <footer class="page-footer">
       <section class="partners">
-        <div class="partners__wrapper">
+        <div class="partners__wrapper wrapper">
           <h2 class="partners__title">приглашаем к сотрудничеству дилеров!</h2>
           <p class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </section>
       <div class="page-footer__map">
-        <img class="page-footer__img" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Карта с отображением месторасположения офиса">
+        <img class="page-footer__img" src="https://via.placeholder.com/320x362" width="100%" height="362" alt="Карта с отображением месторасположения офиса">
       </div>
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo">
-          <!-- Здесь будет лого в формате свг -->
-          CAT ENERGY
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte">Вконтакте</a>
-              <!-- Здесь будут иконки в виде свг -->
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram">Инстаграм</a>
-              <!-- Здесь будут иконки в виде свг -->
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook">Фейсбук</a>
-              <!-- Здесь будут иконки в виде свг -->
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p>HTML Academy</p>
-            <!-- здесь будет svg-иконка с логотипом компании HTML Academy -->
+      <div class="page-footer__wrapper wrapper">
+        <div class="page-footer__bottom">
+          <a class="page-footer__logo logo">
+            <!-- Здесь будет лого в формате свг -->
+            CAT ENERGY
           </a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte">Вконтакте</a>
+                <!-- Здесь будут иконки в виде свг -->
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram">Инстаграм</a>
+                <!-- Здесь будут иконки в виде свг -->
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook">Фейсбук</a>
+                <!-- Здесь будут иконки в виде свг -->
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p>HTML Academy</p>
+              <!-- здесь будет svg-иконка с логотипом компании HTML Academy -->
+            </a>
+          </div>
         </div>
       </div>
     </footer>

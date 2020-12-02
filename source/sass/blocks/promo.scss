@@ -4,12 +4,17 @@
   margin-bottom: 20px;
   background-image: url("../img/cat.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    color: $basic-black;
+  }
 }
 
 .promo__wrapper {
-  min-width: 280px;
-
-  @include margin(20px, 20px);
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__main-title {
@@ -17,12 +22,29 @@
   font-weight: 400;
 
   @include offset(0, 0);
+
+  @media (min-width: $tablet-width) {
+    @include fonts(60px, 60px);
+    width: 414px;
+  }
 }
 
 .promo__text {
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 20px);
+  }
 }
 
 .promo__button {
   @include fonts(14px, 18px);
+  @include offset(0, 0);
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 20px);
+    width: 244px;
+  }
 }

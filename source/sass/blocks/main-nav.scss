@@ -1,8 +1,26 @@
+.main-nav {
+  margin-left: auto;
+}
+
 .main-nav__list {
   @include list-reset();
   @include osvald(500);
   @include fonts(20px, 20px);
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(18px, 24px);
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include fonts(20px, 20px);
+    width: 448px;
+  }
 }
 
 .main-nav__item {
