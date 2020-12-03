@@ -2,19 +2,30 @@
   margin-bottom: 7px;
 }
 
-.programs__wrapper {
-  min-width: 280px;
-
-  @include margin(20px, 20px);
-}
-
 .programs__list {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
   background-color: $basic-grey;
   margin-bottom: 20px;
+  min-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 374px;
+    width: 570px;
+  }
 }
 
 .programs__title {

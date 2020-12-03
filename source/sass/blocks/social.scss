@@ -1,5 +1,8 @@
 .social__list {
   @include list-reset();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social__item {

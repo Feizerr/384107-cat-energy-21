@@ -3,13 +3,24 @@
   padding-bottom: 32px;
 }
 
-.page-footer__wrapper {
-  min-width: 280px;
-
-  @include margin(19px, 19px);
-}
-
 .page-footer__logo {
   display: block;
   padding-top: 39.31px;
+}
+
+.page-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.page-footer__img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
