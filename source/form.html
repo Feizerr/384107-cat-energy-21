@@ -2,14 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class ="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper wrapper">
         <a class="page-header__logo page-header__logo--small">
-          <img class="page-header__img" src="https://via.placeholder.com/150x150" width="34" height="38" alt="Логотип компании, изображающий кота">
+          <img class="page-header__img" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип компании, изображающий кота">
         </a>
         <a class="page-header__logo-text logo">
         CAT ENERGY <!--Здесь вместо текста будет логотип в формате свг-->
@@ -34,34 +35,36 @@
     </header>
     <main class="page-main">
       <section class="choose-program">
-        <div class="choose-program_wrapper">
+        <div class="choose-program_wrapper wrapper">
           <h1 class="choose-program__title">Подбор программы</h1>
           <p class="choose-program__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="choose-program__form form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__fieldset form__info">
-              <label class="form__label form__name">Имя
-                <input class="form__input form__input-info form__input--name" type="text" name="name" placeholder="Барсик" required>
-              </label>
-              <label class="form__label form__weight">Вес (кг)*
-                <input class="form__input form__input-info form__input--weight" type="number" name="weight" placeholder="7" required>
-              </label>
-              <label class="form__label form__age">Возраст (лет)
-                <input class="form__input form__input-info form__input--age" type="number" name="age" placeholder="7" required>
-              </label>
-            </fieldset>
-            <fieldset class="form__fieldset form__purpose">
-              <label class="form__label form__label-radio form__slim">
-                <input class="form__input form__input-radio form__input--slim" type="radio" name="choose-purpose" value="slim" checked>Похудение
-              </label>
-              <label class="form__label form__label-radio">
-                <input class="form__input form__input-radio" type="radio" name="choose-purpose" value="srtong">Набор массы
-              </label>
-              <label class="form__label form__label-radio">
-                <input class="form__input form__input-radio" type="radio" name="choose-purpose" value="advice">Не знаю (нужен ваш совет)
-              </label>
-            </fieldset>
+            <div class="form__container">
+              <fieldset class="form__fieldset form__info">
+                <label class="form__label form__label-info">Имя
+                  <input class="form__input form__input-info form__input--name" type="text" name="name" placeholder="Барсик" required>
+                </label>
+                <label class="form__label form__label-info">Вес (кг)*
+                  <input class="form__input form__input-info form__input--weight" type="number" name="weight" placeholder="7" required>
+                </label>
+                <label class="form__label form__label-info">Возраст (лет)
+                  <input class="form__input form__input-info form__input--age" type="number" name="age" placeholder="7" required>
+                </label>
+              </fieldset>
+              <fieldset class="form__fieldset form__purpose">
+                <label class="form__label form__label-radio form__slim">
+                  <input class="form__input form__input-radio form__input--slim" type="radio" name="choose-purpose" value="slim" checked>Похудение
+                </label>
+                <label class="form__label form__label-radio">
+                  <input class="form__input form__input-radio" type="radio" name="choose-purpose" value="srtong">Набор массы
+                </label>
+                <label class="form__label form__label-radio">
+                  <input class="form__input form__input-radio" type="radio" name="choose-purpose" value="advice">Не знаю (нужен ваш совет)
+                </label>
+              </fieldset>
+            </div>
             <fieldset class="form__fieldset form__owner">
-              <legend class="form__info form-title">Контактные данные (владельца кота)</legend>
+              <legend class="form__info form__title">Контактные данные (владельца кота)</legend>
               <label class="form__label form__email">E-mail:*
                 <input class="form__input form__input-owner form__input--mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
               </label>
@@ -70,35 +73,37 @@
               </label>
             </fieldset>
             <fieldset class="form__fieldset form__comment">
-              <legend class="form__comment-title form-title">Комментарий</legend>
+              <legend class="form__comment-title form__title">Комментарий</legend>
               <label class="form__label form__label--message">
                 <textarea class="form__message-field" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </fieldset>
             <fieldset class="form__fieldset form__aditional">
-              <legend class="form__additional-title form-title">Дополнительно</legend>
-              <label class="form__label form__label--sweetener">
+              <legend class="form__additional-title form__title">Дополнительно</legend>
+              <label class="form__label form__label-aditional">
                 <input class="form__input form__input-checkbox form__input--sweetener" type="checkbox" name="sweetener" checked>сахарозаменитель
               </label>
-              <label class="form__label form__label--water">
+              <label class="form__label form__label-aditional">
                 <input class="form__input form__input-checkbox form__input--water" type="checkbox" name="water">питьевая вода
               </label>
-              <label class="form__label form__label--milk">
+              <label class="form__label form__label-aditional">
                 <input class="form__input form__input-checkbox form__input--milk" type="checkbox" name="milk">молоко
               </label>
-              <label class="form__label form__label--vitamins">
+              <label class="form__label form__label-aditional">
                 <input class="form__input form__input-checkbox form__input--vitamins" type="checkbox" name="vitamins">витамины
               </label>
             </fieldset>
-            <button class="form__button button" type="submit">отправить заявку</button>
-            <p class="form__text form__text--important">* — Обязательные поля</p>
+            <div class="form__button-container">
+              <button class="form__button button" type="submit">отправить заявку</button>
+              <p class="form__text form__text--important">* — Обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <section class="partners">
-        <div class="partners__wrapper">
+        <div class="partners__wrapper wrapper">
           <h2 class="partners__title">приглашаем к сотрудничеству дилеров!</h2>
           <p class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
@@ -106,7 +111,7 @@
       <div class="page-footer__map">
         <img class="page-footer__img" src="https://via.placeholder.com/150x150" width="320" height="362" alt="Карта с отображением месторасположения офиса">
       </div>
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo logo">
           <!-- Здесь будет лого в формате свг -->
           CAT ENERGY

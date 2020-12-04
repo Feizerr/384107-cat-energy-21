@@ -3,12 +3,6 @@
   margin-bottom: 32px;
 }
 
-.choose-program__wrapper {
-  min-width: 280px;
-
-  @include margin(19px, 20px);
-}
-
 .choose-program__title {
   @include fonts(36px, 40px);
   @include offset(0, 0);
@@ -20,4 +14,11 @@
   @include fonts(14px, 18px);
   text-transform: uppercase;
   margin-bottom: 39px;
+}
+
+.choose-program__wrapper,
+.choose-program__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
