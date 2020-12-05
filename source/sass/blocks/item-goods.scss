@@ -9,6 +9,19 @@
 
 .item-goods__container {
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 225px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 286px;
+  }
 }
 
 .item-goods__amount {
@@ -18,4 +31,8 @@
 
 .item-goods__button {
   margin-bottom: 31px;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }

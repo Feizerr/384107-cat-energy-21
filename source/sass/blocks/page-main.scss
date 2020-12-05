@@ -2,7 +2,18 @@
   @include osvald(400);
   @include fonts(36px, 36px);
   font-weight: 400;
+  width: 100%;
 
   @include offset(0, 0);
   margin-bottom: 60px;
+}
+
+.page-main__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
