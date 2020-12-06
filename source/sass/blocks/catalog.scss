@@ -1,9 +1,37 @@
 .catalog__list {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
-.catalog__item:nth-last-of-type(2) {
-  margin-bottom: 103px;
+.catalog__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.catalog__img {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog__food {
@@ -19,25 +47,47 @@
   @include fonts(12px, 16px);
   @include offset(0, 0);
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
 }
 
 .catalog__button {
+  display: block;
+
+  @include offset(0, 0);
+  padding: 10px 0;
   margin-bottom: 44px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
 
 .catalog__show-more {
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .catalog__button-more {
   @include offset(0, 0);
   color: $almost-black;
   background-color: $basic-grey;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 50px;
-  min-width: 279px;
+  width: 279px;
   border: none;
+  box-sizing: border-box;
 
   &:hover {
     background-color: $light-grey;
@@ -46,5 +96,13 @@
   &:active {
     background-color: $light-grey;
     color: rgba($almost-black, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }

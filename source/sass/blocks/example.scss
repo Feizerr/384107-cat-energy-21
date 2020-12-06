@@ -18,6 +18,12 @@
   }
 }
 
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
 .example__title {
   @include osvald(400);
   @include fonts(36px, 40px);
