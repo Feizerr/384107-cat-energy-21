@@ -1,7 +1,31 @@
-fieldset {
+.form__fieldset {
   border: none;
 
   @include offset(0, 0);
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.form__title {
+  @include osvald(400);
+  @include fonts(24px, 26px);
+  color: $basic-black;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(36px, 36px);
+  }
 }
 
 .form__label,
@@ -11,8 +35,12 @@ textarea::placeholder {
   color: $special-dark-grey;
 
   @include osvald(400);
-  @include fonts(14px, 18px);
+  @include fonts(16px, 18px);
   @include offset(0, 0);
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 29.64px);
+  }
 }
 
 .form__label:not(:last-of-type) {
@@ -32,7 +60,8 @@ textarea::placeholder {
   min-height: 45px;
 }
 
-.form__input-info {
+.form__input-info,
+.form__message-field {
   border-color: $the-lightest-grey;
 }
 
@@ -41,9 +70,19 @@ textarea::placeholder {
   margin-bottom: 13px;
 }
 
+
 .form__message-field {
-  min-width: 280px;
+  width: 100%;
   min-height: 150px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form__info {
@@ -52,6 +91,19 @@ textarea::placeholder {
 
 .form__purpose {
   margin-bottom: 38px;
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid $the-lightest-grey;
+  }
+}
+
+.form__info,
+.form__purpose {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .form__owner,
@@ -61,16 +113,60 @@ textarea::placeholder {
 
 .form__aditional {
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__label-aditional {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
+
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 .form__button {
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .form__text {
   font-family: "Arial", sans-serif;
+  min-width: 157px;
 
   @include fonts(14px, 16px);
   @include offset(0, 0);
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 16px);
+    width: 50%;
+    padding-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 81px;
+  }
 }
