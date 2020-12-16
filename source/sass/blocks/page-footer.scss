@@ -1,11 +1,18 @@
 .page-footer {
   background-color: $basic-grey;
   padding-bottom: 32px;
+  position: relative;
 }
 
 .page-footer__logo {
   display: block;
-  padding-top: 39.31px;
+  padding-top: 32px;
+  margin-bottom: 52px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .page-footer__bottom {
@@ -22,5 +29,17 @@
 .page-footer__img {
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
+}
+
+.page-footer__map {
+  margin-bottom: 55px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
   }
 }

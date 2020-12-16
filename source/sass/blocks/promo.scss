@@ -1,20 +1,38 @@
 .promo {
   @include osvald(400);
+  position: relative;
   color: $basic-white;
-  margin-bottom: 20px;
-  background-image: url("../img/cat.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  padding-top: 27px;
+  margin-bottom: 22px;
+  background:
+    url("../img/cat-food.png") 50% 80% no-repeat,
+    url("../img/cat.png") 0 0 no-repeat;
+  background-size: auto, 100% 302px;
+
 
   @media (min-width: $tablet-width) {
-    background-image: none;
+    background: url("../img/cat-food.png") 110px 255px no-repeat;
+    background-size: auto 609px;
     color: $basic-black;
+    padding-top: 54px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/cat-food.png") 64% 13% no-repeat;
+    background-size: auto 499px;
+    padding-top: 104px;
   }
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .promo__main-title {
@@ -22,29 +40,57 @@
   font-weight: 400;
 
   @include offset(0, 0);
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     @include fonts(60px, 60px);
     width: 414px;
+    padding-bottom: 41px;
+    padding-left: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
 .promo__text {
   line-height: 14px;
+  text-transform: uppercase;
+
+  @include offset(0, 0);
+  padding-bottom: 300px;
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
+    padding-bottom: 48px;
+    padding-left: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-bottom: 50px;
   }
 }
 
 .promo__button {
   @include fonts(14px, 18px);
   @include offset(0, 0);
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
     width: 244px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 526px;
+    margin-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 267px;
   }
 }
