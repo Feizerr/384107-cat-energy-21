@@ -38,8 +38,13 @@
   }
 }
 
+.page-header__logo-container {
+  display: flex;
+  width: 192px;
+}
+
 .page-header__logo {
-  padding-right: 19.5%;
+  padding-right: 56px;
   padding-top: 12px;
 
   @media (min-width: $tablet-width) {

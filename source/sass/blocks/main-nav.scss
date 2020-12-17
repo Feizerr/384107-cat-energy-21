@@ -83,7 +83,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 22px;
-  right: -95px;
+  left: 40px;
   z-index: 2;
   display: block;
   width: 18px;
@@ -101,7 +101,7 @@
   content: "";
   position: absolute;
   top: 3px;
-  left: 4px;
+  left: 0;
   width: 24px;
   height: 1.5px;
   background-color: black;
@@ -132,7 +132,7 @@
 
 .main-nav--opened .main-nav__toggle {
   top: -31px;
-  right: -5px;
+  right: 0;
   left: auto;
 
   &::before,

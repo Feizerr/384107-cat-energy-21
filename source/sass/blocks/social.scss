@@ -1,11 +1,21 @@
+.social {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .social__list {
   @include list-reset();
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 49px;
+  border-bottom: 1px solid $special-grey;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    border-bottom: none;
     margin-bottom: 0;
   }
 }
