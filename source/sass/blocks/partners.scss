@@ -1,6 +1,10 @@
 .partners {
-  background-color: $basic-white;
+  background-color: $basic-grey;
   padding-bottom: 24px;
+
+  &__index {
+    background-color: $basic-white;
+  }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
@@ -10,6 +14,7 @@
 .partners__text {
   display: flex;
   justify-content: space-between;
+  padding-top: 28px;
 
   @media (min-width: $desktop-width) {
     @include offset(0, 0);
@@ -51,7 +56,7 @@
   @include fonts(14px, 20px);
   @include size(140px, 60px);
   @include offset(0, 0);
-  text-align: right;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     @include fonts(16px, 20px);

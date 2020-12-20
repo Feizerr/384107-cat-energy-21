@@ -202,3 +202,11 @@
     margin-bottom: 58px;
   }
 }
+
+.programs__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 708px;
+  }
+}
