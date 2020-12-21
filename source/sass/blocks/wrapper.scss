@@ -2,15 +2,15 @@
   @include padding(20px, 20px);
   margin-right: auto;
   margin-left: auto;
-  min-width: 280px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     @include padding(30px, 30px);
-    min-width: 708px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     @include padding(110px, 110px);
-    min-width: 1220px;
+    width: 1220px;
   }
 }
