@@ -1,13 +1,122 @@
-.slider__list {
-  margin-bottom: 27px;
-
-  @include list-reset();
-}
-
 .slider__text {
   text-transform: uppercase;
 
   @include osvald(400);
   @include fonts(16px, 20px);
   @include offset(0, 0);
+}
+
+.slider__img {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.slider__img--closed {
+  display: none;
+}
+
+.slider__list {
+  @include list-reset();
+
+  margin-bottom: 32px;
+}
+
+.slider__item {
+  text-align: center;
+}
+/*Фильтр*/
+
+.slider__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    margin-bottom: 64px;
+    justify-content: space-between;
+  }
+}
+
+.slider__button {
+  border: none;
+  background-color: $dark-grey;
+
+  &:first-of-type {
+    margin-right: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include fonts(20px, 30px);
+
+    &:first-of-type {
+      padding-left: 60px;
+    }
+  }
+}
+
+.slider__check {
+  width: 84px;
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $special-light-grey;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 2px 18px 0 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__check-bar {
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  margin: 3px 6px;
+  box-sizing: border-box;
+}
+
+.slider__scale {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 12px;
+    padding-right: 14px;
+  }
+}
+
+.slider__scale-bar {
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: $medium-grey;
+    border-radius: 6px;
+  }
+}
+
+.slider__scale-control {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-green;
+    border: 13px solid $basic-white;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -2px;
+    left: 220px;
+  }
 }

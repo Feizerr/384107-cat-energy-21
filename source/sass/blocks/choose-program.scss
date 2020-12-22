@@ -6,7 +6,15 @@
 .choose-program__title {
   @include fonts(36px, 40px);
   @include offset(0, 0);
+  padding-top: 5px;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(60px, 60px);
+    padding-top: 47px;
+    padding-left: 39px;
+    margin-bottom: 54px;
+  }
 }
 
 .choose-program__text {
@@ -14,6 +22,12 @@
   @include fonts(14px, 18px);
   text-transform: uppercase;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 30px);
+    padding-left: 40px;
+    width: 327px;
+  }
 }
 
 .choose-program__wrapper,

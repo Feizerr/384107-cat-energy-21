@@ -1,18 +1,25 @@
 .instruction {
-  margin-bottom: 42px;
-}
+  margin-bottom: 73px;
 
-.instruction__wrapper {
-  min-width: 280px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 90px;
+  }
 
-  @include margin(20px, 20px);
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .instruction__title {
   @include osvald(400);
   @include fonts(36px, 40px);
   @include offset(0, 0);
-  margin-bottom: 38px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(60px, 60px);
+    margin-bottom: 32px;
+  }
 }
 
 .instruction__list {
@@ -21,18 +28,116 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 246px 250px 248px 248px;
   }
 }
 
 .instruction__item {
   @include offset(0, 0);
-  margin-bottom: 37px;
+  padding-left: 80px;
+  margin-bottom: 28px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
+    @include fonts(16px, 24px);
+    min-height: 280px;
     width: 250px;
+    padding-left: 0;
+    margin-right: 134px;
+    margin-bottom: 0;
+
+    &:nth-child(2n) {
+      margin-right: 55px;
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.instruction__item--one {
+  @media (min-width: $tablet-width) {
+    background: url("../img/one.svg") 125px 40px no-repeat;
+  }
+}
+
+.instruction__item--two {
+  @media (min-width: $tablet-width) {
+    background: url("../img/two.svg") 123px 40px no-repeat;
+  }
+}
+
+.instruction__item--three {
+  @media (min-width: $tablet-width) {
+    background: url("../img/three.svg") 124px 40px no-repeat;
+  }
+}
+
+.instruction__item--four {
+  @media (min-width: $tablet-width) {
+    background: url("../img/four.svg") 125px 40px no-repeat;
+  }
+}
+
+.instruction__text {
+  @include offset(0, 0);
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 153px;
+  }
+}
+
+.instruction__text--leaf::before,
+.instruction__text--water::before,
+.instruction__text--fork::before,
+.instruction__text--clock::before {
+  position: absolute;
+  content: "";
+  background-position: 0;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: $basic-green;
+    background-position: 50% 50%;
+  }
+}
+
+.instruction__text--leaf::before {
+  background-image: url("../img/leaf.svg");
+}
+
+.instruction__text--water::before {
+  background-image: url("../img/icon-water.svg");
+}
+
+.instruction__text--fork::before {
+  background-image: url("../img/icon-fork.svg");
+}
+
+.instruction__text--clock::before {
+  background-image: url("../img/icon-clock.svg");
 }

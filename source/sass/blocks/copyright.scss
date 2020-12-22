@@ -1,9 +1,27 @@
-.copyright {
-  margin-bottom: 32px;
-}
-
 .copyright__link {
   @include link();
   @include fonts(16px, 19px);
   color: $special-dark-grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &:hover path {
+    fill: $basic-green;
+  }
+
+  &:active {
+    color: rgba($special-dark-grey, 0.25);
+  }
+
+  &:active path {
+    fill: $basic-green;
+    opacity: 0.25;
+  }
+}
+
+
+.copyright__created {
+  @include offset(0, 0);
+  margin-right: 22px;
 }

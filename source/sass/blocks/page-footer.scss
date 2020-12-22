@@ -1,11 +1,17 @@
 .page-footer {
   background-color: $basic-grey;
   padding-bottom: 32px;
+  position: relative;
 }
 
 .page-footer__logo {
   display: block;
-  padding-top: 39.31px;
+  margin-bottom: 32px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .page-footer__bottom {
@@ -19,8 +25,30 @@
   }
 }
 
+.page-footer__logo-container {
+  border-bottom: 1px solid $special-grey;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-bottom: 0;
+  }
+}
+
 .page-footer__img {
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
+}
+
+.page-footer__map {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
   }
 }
