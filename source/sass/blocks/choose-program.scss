@@ -6,13 +6,12 @@
 .choose-program__title {
   @include fonts(36px, 40px);
   @include offset(0, 0);
-  padding-top: 5px;
-  margin-bottom: 37px;
+  padding-top: 22px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     @include fonts(60px, 60px);
-    padding-top: 47px;
-    padding-left: 39px;
+    padding-top: 54px;
     margin-bottom: 54px;
   }
 }
@@ -21,11 +20,11 @@
   @include offset(0, 0);
   @include fonts(14px, 18px);
   text-transform: uppercase;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 30px);
-    padding-left: 40px;
+    margin-bottom: 67px;
     width: 327px;
   }
 }
@@ -35,4 +34,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.choose-program__wrapper {
+  @include padding(20px, 20px);
+  margin-right: auto;
+  margin-left: auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 71px;
+    padding-left: 69px;
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include padding(110px, 110px);
+    width: 1220px;
+  }
 }

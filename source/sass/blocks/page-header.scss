@@ -41,6 +41,11 @@
 .page-header__logo-container {
   display: flex;
   width: 192px;
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
 }
 
 .page-header__logo {
@@ -64,6 +69,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 95px;
+    padding-top: 3px;
   }
 
   @media (min-width: $desktop-width) {

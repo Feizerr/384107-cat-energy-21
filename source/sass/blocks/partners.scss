@@ -1,9 +1,13 @@
 .partners {
   background-color: $basic-grey;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
 
   &__index {
     background-color: $basic-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,8 +20,13 @@
   justify-content: space-between;
   padding-top: 28px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+  }
+
   @media (min-width: $desktop-width) {
     @include offset(0, 0);
+    padding-top: 0;
     width: 570px;
     min-height: 201px;
     position: absolute;
@@ -38,7 +47,7 @@
   @include offset(0, 0);
 
   @media (min-width: $tablet-width) {
-    @include fonts(20px, 21px);
+    @include fonts(20px, 26px);
     padding-left: 41px;
   }
 
@@ -62,6 +71,7 @@
     @include fonts(16px, 20px);
     min-width: 159px;
     padding-right: 41px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +85,7 @@
 
 .partners__space {
   @media (min-width: $tablet-width) {
-    padding-top: 28px;
+    padding-top: 17px;
     display: inline-block;
   }
 
