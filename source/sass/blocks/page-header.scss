@@ -36,6 +36,10 @@
   @media (min-width: $desktop-width) {
     padding-top: 73px;
   }
+
+  &--inner {
+    margin-bottom: 0;
+  }
 }
 
 .page-header__logo-container {

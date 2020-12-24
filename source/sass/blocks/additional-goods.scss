@@ -1,8 +1,13 @@
 .additional-goods {
-  margin-bottom: 57px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 896px;
+    margin-bottom: 82px;
   }
 }
 
@@ -10,14 +15,27 @@
   @include osvald(400);
   @include fonts(24px, 24px);
   @include offset(0, 0);
-  margin-bottom: 49px;
+  padding-left: 20px;
+  margin-left: -20px;
+  margin-bottom: 36px;
+  width: 247px;
+  background-color: $basic-white;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
-    padding-left: 38px;
+    @include fonts(36px, 36px);
+    padding-right: 30px;
+    padding-left: 45px;
+    margin-left: -10px;
+    margin-bottom: 80px;
+
+    width: 338px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding-left: 40px;
+    margin-left: -40px;
+    width: 390px;
   }
 }
 
@@ -30,20 +48,26 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 1px solid $medium-grey;
+  padding-top: 12px;
 
+  &:last-child {
+    border-bottom: 1px solid $medium-grey;
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding-top: 24px;
     padding-left: 38px;
     padding-right: 38px;
+    border: 1px solid $medium-grey;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 14px;
     padding-left: 0;
+    padding-right: 0;
+    border: none;
+    border-top: 1px solid $medium-grey;
   }
-}
-
-.item-goods__amount {
-  @include offset(0, 0);
-  margin-bottom: 49px;
 }
