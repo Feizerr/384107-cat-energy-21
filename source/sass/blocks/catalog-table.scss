@@ -1,5 +1,28 @@
 .catalog-table {
-  @include fonts(12px, 16px);
+  @include fonts(12px, 15px);
   @include offset(0, 0);
-  margin-bottom: 22px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 16px);
+    width: 252px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  & tr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid $special-light-grey;
+      padding-top: 6px;
+      padding-bottom: 7px;
+    }
+  }
 }

@@ -52,6 +52,7 @@
 
 .slider__button {
   border: none;
+  border-bottom: 1px dotted rgba($basic-black, 0.3);
   background-color: $dark-grey;
 
   &:first-of-type {
@@ -60,10 +61,18 @@
 
   @media (min-width: $desktop-width) {
     @include fonts(20px, 30px);
-
-    &:first-of-type {
+    /*&:first-of-type {
       padding-left: 60px;
-    }
+    }*/
+  }
+
+  &:hover {
+    border-bottom: 1px solid rgba($basic-black, 0.4);
+  }
+
+  &:active {
+    border: none;
+    outline: none;
   }
 }
 
@@ -109,8 +118,8 @@
 
 .slider__scale-control {
   @media (min-width: $tablet-width) {
-    background-color: $basic-green;
-    border: 13px solid $basic-white;
+    background-color: $basic-white;
+    border: 1px solid $special-light-grey;
     border-radius: 50%;
     width: 34px;
     height: 34px;
@@ -118,5 +127,28 @@
     position: absolute;
     top: -2px;
     left: 220px;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      border: solid 1px $basic-green;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
   }
 }

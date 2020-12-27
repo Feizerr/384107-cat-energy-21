@@ -171,20 +171,34 @@
   margin-bottom: 23px;
   position: relative;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &::after {
     position: absolute;
     content: "";
     background-position: 0;
     background-repeat: no-repeat;
     background-image: url("../img/icon-arrow.svg");
-    width: 32px;
+    width: 30px;
     height: 10px;
     top: 4px;
     left: 120px;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      background-image: url("../img/long-arrow.svg");
+      width: 32px;
+      height: 12px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/long-arrow.svg");
+      width: 32px;
+      height: 12px;
+    }
   }
 
   @media (min-width: $tablet-width) {
