@@ -33,4 +33,8 @@
   @include offset(0, 0);
   padding-top: 5px;
   margin-right: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
 }
