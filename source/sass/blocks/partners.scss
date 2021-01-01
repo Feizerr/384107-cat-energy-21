@@ -18,10 +18,10 @@
 .partners__text {
   display: flex;
   justify-content: space-between;
-  padding-top: 28px;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 62px;
+    padding-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,7 +30,7 @@
     width: 570px;
     min-height: 201px;
     position: absolute;
-    top: 97px;
+    top: 95px;
     left: 110px;
     background-color: $basic-white;
     align-items: center;
@@ -85,7 +85,7 @@
 
 .partners__space {
   @media (min-width: $tablet-width) {
-    padding-top: 17px;
+    padding-top: 19px;
     display: inline-block;
   }
 
