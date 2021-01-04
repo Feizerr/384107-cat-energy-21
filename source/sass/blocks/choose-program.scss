@@ -37,6 +37,10 @@
     margin-bottom: 67px;
     width: 327px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
 }
 
 .choose-program__wrapper,
