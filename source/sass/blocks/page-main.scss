@@ -9,12 +9,10 @@
 }
 
 .page-main__catalog-title {
-  padding-top: 27px;
-  padding-bottom: 41px;
   margin-bottom: 0;
 
   @media (max-width: $mobile-width-only) {
-    padding: 24px 20px 23px 20px;
+    padding: 28px 20px 41px 20px;
     margin: 0 -20px;
     border-top: 1px solid $light-grey;
     border-bottom: 1px solid $light-grey;
@@ -22,10 +20,16 @@
 
   @media (min-width: $tablet-width) {
     @include fonts(60px, 60px);
-    padding-top: 58px;
+    padding-top: 62px;
     padding-bottom: 0;
-    margin-bottom: 161px;
+    margin-bottom: 163px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include fonts(60px, 60px);
+    padding-top: 76px;
+    margin-bottom: 163px;
   }
 }
 

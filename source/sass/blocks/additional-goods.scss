@@ -25,17 +25,16 @@
   @media (min-width: $tablet-width) {
     @include fonts(36px, 36px);
     padding-right: 30px;
-    padding-left: 45px;
-    margin-left: -10px;
+    padding-left: 38px;
+    margin-left: -2px;
     margin-bottom: 80px;
-
-    width: 338px;
+    width: 340px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 40px;
     margin-left: -40px;
-    width: 390px;
+    width: 344px;
   }
 }
 
@@ -50,6 +49,7 @@
   justify-content: space-between;
   border-top: 1px solid $medium-grey;
   padding-top: 12px;
+  box-sizing: border-box;
 
   &:last-child {
     border-bottom: 1px solid $medium-grey;
