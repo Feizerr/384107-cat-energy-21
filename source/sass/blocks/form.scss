@@ -58,21 +58,16 @@ textarea::placeholder {
   }
 }
 
-textarea {
-  resize: none;
-}
-
-
 .form__input {
   border: 1px solid $special-light-grey;
   box-sizing: border-box;
 
+  &:hover {
+    border-color: $special-light-grey;
+  }
+
   @include osvald(400);
   @include offset(0, 0);
-
-  &:invalid {
-    border: 1px solid $basic-red;
-  }
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 30px);
@@ -83,21 +78,14 @@ textarea {
   margin-right: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 16px;
+    margin-right: 17px;
   }
 }
 
 .form__input-info {
   padding-left: 14px;
   flex-grow: 1;
-
-  &:hover {
-    border-color: $special-light-grey;
-  }
-
-  &:invalid {
-    border-color: $basic-red;
-  }
+  border-color: $the-lightest-grey;
 
   &[placeholder] {
     padding-top: 5px;
@@ -119,12 +107,16 @@ textarea {
 }
 
 .form__input-info,
-.form__message-field {
-  border-color: $the-lightest-grey;
+.form__message-field,
+.form__input-owner {
+  &:invalid {
+    border: none;
+    outline: 1px solid $basic-red;
+  }
 
   &:focus {
-    outline: none;
-    border: 2px solid $special-dark-grey;
+    border: none;
+    outline: 2px solid $special-dark-grey;
   }
 }
 
@@ -232,11 +224,17 @@ textarea {
   min-height: 150px;
   box-sizing: border-box;
   padding: 12px 9px 15px 13px;
+  resize: none;
+
+  @include osvald(400);
+  @include offset(0, 0);
 
   @media (min-width: $tablet-width) {
     width: 631px;
     min-height: 174px;
     padding: 9px 9px 15px 18px;
+
+    @include fonts(20px, 30px);
   }
 
   @media (min-width: $desktop-width) {
@@ -280,7 +278,7 @@ textarea {
     padding-top: 30px;
     padding-left: 38px;
     padding-bottom: 18px;
-    margin-bottom: 73px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -294,7 +292,7 @@ textarea {
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -384,7 +382,7 @@ textarea {
 
 .form__email {
   @media (min-width: $tablet-width) {
-    margin-right: 19px;
+    margin-right: 22px;
   }
 }
 
@@ -396,14 +394,12 @@ textarea {
     padding-top: 5px;
   }
 
-  &:disabled + svg line,
-  &:disabled + svg path {
-    stroke: $basic-green;
+  &:disabled + svg {
+    color: $basic-green;
   }
 
-  &:invalid + svg line,
-  &:invalid + svg path {
-    stroke: $basic-red;
+  &:invalid + svg {
+    color: $basic-red;
   }
 
   @media (min-width: $tablet-width) {
@@ -426,10 +422,10 @@ textarea {
 
   @media (min-width: $tablet-width) {
     top: 18px;
-    right: 13px;
+    right: 15px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     right: 19px;
   }
 }
@@ -444,10 +440,10 @@ textarea {
 
   @media (min-width: $tablet-width) {
     top: 14px;
-    right: 13px;
+    right: 10px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     right: 18px;
   }
 }
@@ -460,7 +456,7 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -471,7 +467,7 @@ textarea {
 .form__item-additional {
   @media (min-width: $tablet-width) {
     padding-left: 59px;
-    padding-bottom: 35px;
+    padding-bottom: 38px;
     width: 36%;
   }
 
@@ -559,7 +555,7 @@ textarea {
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 20px;
+    padding-bottom: 22px;
   }
 }
 
