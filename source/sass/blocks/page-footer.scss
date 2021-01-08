@@ -41,38 +41,33 @@
 
 .page-footer__map {
   height: 362px;
+  width: 100%;
   margin-bottom: 40px;
   background-image: url("../img/location@1x.jpg");
-  background-size: auto 362px;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/location@2x.jpg");
-    background-size: auto 362px;
-    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
-    width: auto;
     height: 400px;
+    margin-bottom: 60px;
     background-image: url("../img/location-tablet@1x.jpg");
-    background-size: auto 400px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/location-tablet@2x.jpg");
-      background-size: auto 400px;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 58px;
     background-image: url("../img/location-desktop@1x.jpg");
-    background-size: auto 400px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/location-desktop@2x.jpg");
-      background-size: auto 400px;
     }
   }
 }
