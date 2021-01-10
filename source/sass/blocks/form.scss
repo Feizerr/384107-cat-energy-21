@@ -70,7 +70,7 @@ textarea {
   @include offset(0, 0);
 
   &:invalid {
-    border-color: red;
+    border: 1px solid $basic-red;
   }
 }
 
@@ -88,10 +88,6 @@ textarea {
 
   &:hover {
     border-color: $special-light-grey;
-  }
-
-  &:focus {
-    border: 2px solid $special-dark-grey;
   }
 
   &:invalid {
@@ -120,6 +116,11 @@ textarea {
 .form__input-info,
 .form__message-field {
   border-color: $the-lightest-grey;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+  }
 }
 
 .form__filter {
@@ -187,8 +188,8 @@ textarea {
 .form__input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: -37px;
+  top: 0;
+  left: -38px;
   width: 14px;
   height: 14px;
   background-color: $basic-green;
@@ -241,19 +242,10 @@ textarea {
 .form__info,
 .form__purpose {
   @media (max-width: $mobile-width-only) {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 360px;
-      height: 1px;
-      background-color: $light-grey;
-      margin-right: -20px;
-      margin-left: -20px;
-      bottom: 0;
-      left: -20px;
-    }
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 -20px;
+    border-bottom: 1px solid $light-grey;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,12 +1,16 @@
 .instruction {
-  margin-bottom: 73px;
+  margin-bottom: 47px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 90px;
+    padding-bottom: 46px;
+    margin-bottom: 44px;
+    border-bottom: 1px solid $light-grey;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 34px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -14,7 +18,7 @@
   @include osvald(400);
   @include fonts(36px, 40px);
   @include offset(0, 0);
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     @include fonts(60px, 60px);
@@ -46,7 +50,7 @@
 .instruction__item {
   @include offset(0, 0);
   padding-left: 80px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -99,7 +103,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 153px;
+    padding-top: 152px;
   }
 }
 
@@ -113,7 +117,7 @@
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  top: 0;
+  top: -3px;
   left: -80px;
 
   @media (min-width: $tablet-width) {

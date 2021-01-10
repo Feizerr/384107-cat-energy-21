@@ -1,22 +1,30 @@
 .social {
   margin-bottom: 26px;
+  border-bottom: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    border-bottom: none;
   }
 }
 
 .social__list {
   @include list-reset();
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  border-bottom: 1px solid $special-grey;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
+  width: 130px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    width: 130px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 150px;
   }
 }
 
@@ -25,8 +33,34 @@
   display: block;
   text-align: center;
 
-  &:not(:last-of-type) {
-    margin-right: 36px;
+  &:first-child {
+    margin-right: 35px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:first-child {
+      padding-left: 12px;
+      margin-right: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      padding-left: 15px;
+      margin-right: 22px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 17px;
+    }
   }
 }
 
@@ -57,6 +91,23 @@
   @include link();
 }
 
-.socia__icon:hover {
-  fill: $basic-green;
+.social__icon-vk {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__icon-insta {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__icon-fb {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 27px;
+  }
 }
