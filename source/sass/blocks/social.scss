@@ -3,6 +3,7 @@
   border-bottom: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
+    margin-left: 30px;
     margin-bottom: 0;
     border-bottom: none;
   }
@@ -20,12 +21,9 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    width: 130px;
+    width: 136px;
+    margin-top: -8px;
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 150px;
   }
 }
 
@@ -33,82 +31,35 @@
   @include offset(0, 0);
   display: block;
   text-align: center;
-
-  &:first-child {
-    margin-right: 35px;
-  }
-
-  &:nth-child(2) {
-    margin-right: 33px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &:first-child {
-      padding-left: 12px;
-      margin-right: 20px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 18px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:first-child {
-      padding-left: 15px;
-      margin-right: 22px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 14px;
-    }
-  }
-}
-
-.social__link--vkontakte,
-.social__link--instagram {
-  &:hover path {
-    fill: $basic-green;
-  }
-
-  &:active path {
-    fill: $basic-green;
-    opacity: 0.25;
-  }
-}
-
-.social__link--facebook {
-  &:hover path {
-    stroke: $basic-green;
-  }
-
-  &:active path {
-    stroke: $basic-green;
-    opacity: 0.25;
-  }
 }
 
 .social__link {
   @include link();
-}
+  color: #666666;
 
-.social__icon-vk {
-  @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 22px;
+  &:hover {
+    color: $basic-green;
   }
-}
 
-.social__icon-insta {
-  @media (min-width: $tablet-width) {
-    width: 23px;
-    height: 23px;
+  &:active {
+    color: $basic-green;
+    opacity: 0.25;
   }
-}
 
-.social__icon-fb {
   @media (min-width: $tablet-width) {
-    width: 23px;
-    height: 27px;
+    &--vkontakte svg {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--instagram svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook svg {
+      width: 28px;
+      height: 33px;
+    }
   }
 }

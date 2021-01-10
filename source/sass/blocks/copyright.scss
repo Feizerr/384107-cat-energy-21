@@ -6,16 +6,16 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  &:hover path {
-    fill: $basic-green;
+  &:hover svg {
+    color: $basic-green;
   }
 
   &:active {
     color: rgba($special-dark-grey, 0.25);
   }
 
-  &:active path {
-    fill: $basic-green;
+  &:active svg {
+    color: $basic-green;
     opacity: 0.25;
   }
 
@@ -36,5 +36,9 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
   }
 }
