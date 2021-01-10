@@ -12,7 +12,7 @@
   @media (min-width: $desktop-width) {
 
     flex-direction: row;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 
@@ -67,10 +67,15 @@ textarea {
   border: 1px solid $special-light-grey;
   box-sizing: border-box;
 
+  @include osvald(400);
   @include offset(0, 0);
 
   &:invalid {
     border: 1px solid $basic-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 30px);
   }
 }
 
@@ -102,8 +107,8 @@ textarea {
     padding-left: 18px;
 
     &[placeholder] {
-      padding-top: 21px;
-      padding-bottom: 14px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 }
@@ -199,7 +204,7 @@ textarea {
     width: 18px;
     height: 18px;
     top: 6px;
-    left: -48px;
+    left: -49px;
   }
 }
 
@@ -217,8 +222,8 @@ textarea {
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    top: 5px;
-    left: -49px;
+    top: 6px;
+    left: -48px;
   }
 }
 
@@ -258,7 +263,7 @@ textarea {
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -293,7 +298,7 @@ textarea {
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 }
 
@@ -315,7 +320,7 @@ textarea {
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 
@@ -323,7 +328,7 @@ textarea {
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 77px;
   }
 }
 
@@ -331,8 +336,8 @@ textarea {
   width: 140px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
-    width: 258px;
+    margin-bottom: 78px;
+    width: 226px;
   }
 
   @media (min-width: $desktop-width) {
@@ -347,11 +352,11 @@ textarea {
 
   @media (min-width: $tablet-width) {
     width: 292px;
-    margin-bottom: 62px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 63px;
+    margin-bottom: 64px;
     width: 255px;
   }
 }
@@ -360,7 +365,7 @@ textarea {
   width: 201px;
 
   @media (min-width: $tablet-width) {
-    width: 593px;
+    width: 558px;
   }
 
   @media (min-width: $desktop-width) {
@@ -377,6 +382,12 @@ textarea {
   }
 }
 
+.form__email {
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
+}
+
 .form__input-owner {
   padding-left: 12px;
   flex-grow: 1;
@@ -385,26 +396,22 @@ textarea {
     padding-top: 5px;
   }
 
-  &:hover::placeholder {
-    color: green;
+  &:disabled + svg line,
+  &:disabled + svg path {
+    stroke: $basic-green;
   }
 
-  &:hover + svg {
-    stroke: green;
-    fill: green;
-  }
-
-  &:invalid + svg {
-    stroke: red;
-    fill: red;
+  &:invalid + svg line,
+  &:invalid + svg path {
+    stroke: $basic-red;
   }
 
   @media (min-width: $tablet-width) {
     padding-left: 18px;
 
     &[placeholder] {
-      padding-top: 21px;
-      padding-bottom: 14px;
+      padding-top: 9px;
+      padding-bottom: 10px;
     }
   }
 }
@@ -416,6 +423,15 @@ textarea {
   top: 15px;
   right: 15px;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 19px;
+  }
 }
 
 .form__img-phone {
@@ -425,6 +441,15 @@ textarea {
   top: 13px;
   right: 15px;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 14px;
+    right: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+  }
 }
 
 .form__list-additional {
@@ -439,7 +464,7 @@ textarea {
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 }
 
@@ -520,6 +545,7 @@ textarea {
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 17px;
     padding-left: 78px;
   }
 }
