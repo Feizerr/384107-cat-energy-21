@@ -72,6 +72,10 @@ textarea::placeholder {
   @media (min-width: $tablet-width) {
     @include fonts(20px, 30px);
   }
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 30px);
+  }
 }
 
 .form__label-info {
@@ -394,6 +398,7 @@ textarea::placeholder {
     padding-top: 5px;
   }
 
+ module7-task2
   &:disabled + svg {
     color: $basic-green;
   }
