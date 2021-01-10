@@ -72,6 +72,10 @@ textarea::placeholder {
   @media (min-width: $tablet-width) {
     @include fonts(20px, 30px);
   }
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 30px);
+  }
 }
 
 .form__label-info {
@@ -116,7 +120,7 @@ textarea::placeholder {
 
   &:focus {
     border: none;
-    outline: 2px solid $special-dark-grey;
+    outline: 1px solid $special-dark-grey;
   }
 }
 
