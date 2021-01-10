@@ -6,11 +6,11 @@
   @media (min-width: $tablet-width) {
     @include fonts(16px, 16px);
     width: 252px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 173px;
     margin-bottom: 30px;
   }
 

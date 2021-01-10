@@ -43,12 +43,12 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 120px 60px 423px;
+    padding: 72px 119px 60px 422px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 43px 42px 41px;
+    padding: 187px 43px 42px 41px;
     text-align: center;
   }
 
@@ -65,11 +65,14 @@
 
     @media (min-width: $tablet-width) {
       top: 58px;
+      left: 80px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 54px;
+      top: 56px;
       left: 84px;
+      width: 80px;
+      height: 83px;
     }
   }
 }
