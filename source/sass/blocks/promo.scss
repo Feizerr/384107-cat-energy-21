@@ -7,9 +7,11 @@
   margin-right: auto;
   margin-bottom: 22px;
   background:
+
     url("../img/index-can-mobile 1.png") 50% 80% no-repeat,
-    url("../img/green-cat.jpg") 0 0 no-repeat;
-  background-size: auto, 100% 302px;
+    url("../img/green-cat.jpg") 50% 0 no-repeat,
+    linear-gradient(to bottom, $dark-green 0%, $dark-green 63%, $basic-white 63%);
+  background-size: auto, 320px 302px, auto;
 
   @media (min-resolution: 2dppx) {
     background:
@@ -83,11 +85,13 @@
     @include fonts(20px, 20px);
     padding-bottom: 48px;
     padding-left: 88px;
+    width: 290px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     padding-bottom: 50px;
+    width: 414px;
   }
 }
 

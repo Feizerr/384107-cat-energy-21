@@ -105,6 +105,7 @@
     @include fonts(16px, 24px);
     @include offset(0, 0);
 
+    width: 700px;
     margin-bottom: 54px;
   }
 
@@ -215,8 +216,8 @@
   @include offset(0, 0);
   position: absolute;
   top: 45px;
-  left: 19px;
-  width: 85px;
+  left: 23px;
+  width: 80px;
   background-color: $dark-grey;
 
   @media (min-width: $tablet-width) {

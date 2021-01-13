@@ -5,6 +5,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -17,7 +22,7 @@
   @media (min-width: $tablet-width) {
     @include fonts(60px, 60px);
     padding-top: 59px;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
