@@ -7,7 +7,6 @@
   margin-right: auto;
   margin-bottom: 22px;
   background:
-
     url("../img/index-can-mobile 1.png") 50% 80% no-repeat,
     url("../img/green-cat.jpg") 50% 0 no-repeat,
     linear-gradient(to bottom, $dark-green 0%, $dark-green 63%, $basic-white 63%);
@@ -16,8 +15,9 @@
   @media (min-resolution: 2dppx) {
     background:
       url("../img/index-can-mobile 1@2x.png") 50% 80% no-repeat,
-      url("../img/green-cat@2x.jpg") 0 0 no-repeat;
-    background-size: 280px auto, 100% 302px;
+      url("../img/green-cat@2x.jpg") 50% 0 no-repeat,
+      linear-gradient(to bottom, $dark-green 0%, $dark-green 63%, $basic-white 63%);
+    background-size: 280px auto, 320px 302px, auto;
   }
 
   @media (min-width: $tablet-width) {

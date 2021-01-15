@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Натуральные корма Cat Energy для котят и взрослых котов">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style-min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class ="page-header page-header__index">
@@ -109,9 +111,9 @@
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png">
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png">
-                  <img class="slider__img slider__img-before slider__img--active" src="img/before-mobile@1x.png" scrset="img/before-mobile@2x.png" width="316" height="240" alt="Кот Борис до диеты">
+                  <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="slider__img slider__img-before slider__img--active" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="316" height="240" alt="Кот Борис до диеты">
                 </picture>
               </li>
               <li class="slider__item">
@@ -152,7 +154,7 @@
         </div>
       </section>
       <div class="page-footer__map">
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610036492938!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+        <iframe class="page-footer__ifreme-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610036492938!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <div class="page-footer__wrapper wrapper">
         <div class="page-footer__bottom">
@@ -164,22 +166,22 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte">
-                  <svg class="social__icon-vk" width="23" height="16">
+                <a class="social__link social__link--vkontakte" href="#" aria-label="Вконтакте">
+                  <svg class="social__icon-vk" width="23" height="16" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram">
-                  <svg class="social__icon-insta" width="16" height="16">
+                <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
+                  <svg class="social__icon-insta" width="16" height="16" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook">
-                  <svg class="social__icon-vk" width="22" height="22">
+                <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
+                  <svg class="social__icon-vk" width="22" height="22" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#fb"></use>
                   </svg>
                 </a>
@@ -189,7 +191,7 @@
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__created">HTML Academy</p>
-              <svg class="copyright__link-logo" width="27" height="34">
+              <svg class="copyright__link-logo" width="27" height="34" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#logo-academy"></use>
               </svg>
             </a>
