@@ -76,15 +76,19 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 17px;
+  min-height: 40px;
 
   @media (min-width: $tablet-width) {
     width: 632px;
     margin-bottom: 26px;
+    min-height: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 244px;
     margin-bottom: 16px;
     box-sizing: border-box;
+    min-height: 40px;
+    align-self: center;
   }
 }
