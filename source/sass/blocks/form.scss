@@ -156,6 +156,11 @@ textarea::placeholder {
   padding-bottom: 4px;
 }
 
+.form__input-radio:focus + label::before,
+.form__input-checkbox:focus + label::before {
+  outline: auto;
+}
+
 .form__input-radio + label::before,
 .form__input-checkbox + label::before {
   content: "";
