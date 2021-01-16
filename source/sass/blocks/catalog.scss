@@ -23,7 +23,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }
 
@@ -74,12 +77,12 @@
     min-height: 432px;
     padding-right: 33px;
     padding-left: 35px;
-    margin-bottom: 142px;
+    margin-bottom: 62px;
     box-sizing: border-box;
 
-    &:nth-last-child(3),
-    &:nth-last-child(4) {
-      margin-bottom: 0;
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 62px;
     }
   }
 

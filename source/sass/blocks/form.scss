@@ -139,7 +139,6 @@ textarea::placeholder {
 }
 
 .form__filter label {
-  display: block;
   position: relative;
   cursor: pointer;
   user-select: none;
@@ -470,7 +469,11 @@ textarea::placeholder {
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 50px;
+    margin-bottom: 62px;
   }
 }
 
@@ -482,7 +485,9 @@ textarea::placeholder {
   }
 
   @media (min-width: $desktop-width) {
-    width: 15.5%;
+    width: 245px;
+    padding-bottom: 0;
+    box-sizing: border-box;
   }
 }
 
