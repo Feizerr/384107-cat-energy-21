@@ -5,6 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
@@ -74,6 +75,17 @@ const createWebp = () => {
 
 exports.createWebp = createWebp;
 
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
+
+exports.sprite = sprite;
+
 // Copy
 
 const copy = (done) => {
@@ -112,13 +124,6 @@ const server = (done) => {
 
 exports.server = server;
 
-// Watcher
-
-// const watcher = () => {
-//   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-//   gulp.watch("source/*.html").on("change", sync.reload);
-// }
-
 // Reload
 
 const reload = (done) => {
@@ -142,6 +147,7 @@ const build = gulp.series(
     styles,
     html,
     scripts,
+    sprite,
     copy,
     images,
     createWebp
@@ -157,6 +163,7 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
+    sprite,
     copy,
     createWebp
   ),

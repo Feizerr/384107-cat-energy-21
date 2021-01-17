@@ -73,6 +73,12 @@
     @include color($basic-black, 0.3);
     border-bottom: none;
   }
+
+  &--active {
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
 }
 
 .main-nav__link-index {

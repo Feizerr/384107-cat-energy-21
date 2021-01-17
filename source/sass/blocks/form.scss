@@ -156,10 +156,10 @@ textarea::placeholder {
   padding-bottom: 4px;
 }
 
-.form__input-radio:focus + label::before,
+/*.form__input-radio:focus + label::before,
 .form__input-checkbox:focus + label::before {
   outline: auto;
-}
+}*/
 
 .form__input-radio + label::before,
 .form__input-checkbox + label::before {
@@ -231,6 +231,12 @@ textarea::placeholder {
   min-height: 150px;
   box-sizing: border-box;
   resize: none;
+  outline: none;
+  border-color: $the-lightest-grey;
+
+  &:hover {
+    border-color: $special-light-grey;
+  }
 
   @include osvald(400);
   @include offset(0, 0);
@@ -517,6 +523,8 @@ textarea::placeholder {
   width: 280px;
   box-sizing: border-box;
   margin-bottom: 23px;
+  outline: none;
+  border: none;
 
   @media (min-width: $tablet-width) {
     width: 306px;

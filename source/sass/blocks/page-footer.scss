@@ -2,6 +2,22 @@
   background-color: $basic-grey;
   padding-bottom: 32px;
   position: relative;
+
+  &__partners-index {
+    background-color: $basic-white;
+  }
+}
+
+.page-footer__img {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: auto;
+  }
 }
 
 .page-footer__logo {

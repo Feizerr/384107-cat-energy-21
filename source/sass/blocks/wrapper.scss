@@ -14,25 +14,3 @@
     width: 1220px;
   }
 }
-
-.wrapper__decoration {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: $basic-green;
-    top: 14px;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      top: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 23px;
-    }
-  }
-}

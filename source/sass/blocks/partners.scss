@@ -2,10 +2,6 @@
   background-color: $basic-grey;
   padding-bottom: 21px;
 
-  &__index {
-    background-color: $basic-white;
-  }
-
   @media (min-width: $tablet-width) {
     padding-bottom: 57px;
   }

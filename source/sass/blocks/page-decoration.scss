@@ -1,0 +1,7 @@
+.page-main-decoration {
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}

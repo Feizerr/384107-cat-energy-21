@@ -31,7 +31,7 @@
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link">Каталог продукции</a>
+              <a class="main-nav__link  main-nav__link--active">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Подбор программы</a>
@@ -40,11 +40,11 @@
         </nav>
       </div>
     </header>
-    <main class="page-main page-main__decoration">
+    <main class="page-main page-decoration">
       <div class="page-main__wrapper wrapper">
         <h1 class="page-main__main-title page-main__catalog-title">Каталог продукции</h1>
       </div>
-      <div class="page-main__wrapper wrapper wrapper__catalog">
+      <div class="page-main__wrapper wrapper">
         <section class="catalog">
           <h2 class="visually-hidden">Популярные продукты</h2>
           <ul class="catalog__list">
@@ -261,12 +261,12 @@
             <li class="catalog__item catalog__item--aditional">
               <h3 class="catalog__food catalog__show-more">Показать еще 100500 товаров</h3>
               <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-              <a class="catalog__button-more button" type="button">Показать все</a>
+              <a class="catalog__button-more button" href="#">Показать все</a>
             </li>
           </ul>
         </section>
       </div>
-      <div class="wrapper__decoration">
+      <div class="page-main__wrapper-decoration">
         <div class="page-main__wrapper wrapper">
           <section class="additional-goods">
             <h2 class="additional-goods__title">Дополнительные товары</h2>
@@ -328,7 +328,7 @@
         <div class="page-footer__bottom">
           <div class="page-footer__logo-container">
             <a class="page-footer__logo logo" href="index.html" aria-label="Вернуться на главную страницу">
-              <img class="page-header__img page-footer__logo-img" src="img/logo-text.svg" width="128" height="24" alt="Текстовый логотип компании Cat Energy">
+              <img class="page-footer__img page-footer__logo-img" src="img/logo-text.svg" width="128" height="24" alt="Текстовый логотип компании Cat Energy">
             </a>
           </div>
           <div class="page-footer__social social">
@@ -343,7 +343,7 @@
               <li class="social__item">
                 <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
                   <svg class="social__icon-insta" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#insta"></use>
+                    <use xlink:href="img/sprite.svg#inst"></use>
                   </svg>
                 </a>
               </li>
@@ -360,7 +360,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__created">HTML Academy</p>
               <svg class="copyright__link-logo" width="27" height="34">
-                <use xlink:href="img/sprite.svg#logo-academy"></use>
+                <use xlink:href="img/sprite.svg#academy"></use>
               </svg>
             </a>
           </div>
@@ -368,4 +368,5 @@
       </div>
     </footer>
     <script src="js/navigation.js"></script>
+  </body>
 </html>
