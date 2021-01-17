@@ -1,0 +1,26 @@
+.index {
+  @include offset(0, 0);
+  min-height: 100%;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 694px;
+      top: 0;
+      left: 50%;
+      right: 0;
+      bottom: 0;
+      background-color: $dark-green;
+      background-image: url("../img/green-cat-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/green-cat-desktop@2x.jpg");
+      }
+    }
+  }
+}
