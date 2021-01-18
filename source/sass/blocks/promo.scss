@@ -21,14 +21,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    background: url("../img/index-can-tablet 1.png") 30px 258px no-repeat;
+    background: url("../img/index-can-tablet 1.png") center 258px no-repeat;
     background-size: auto 609px;
     color: $basic-black;
     padding-top: 58px;
     margin-bottom: 0;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/index-can-tablet 1@2x.png") 29px 258px no-repeat;
+      background: url("../img/index-can-tablet 1@2x.png") center 258px no-repeat;
       background-size: 709px auto;
     }
   }
