@@ -639,3 +639,13 @@ textarea::placeholder {
     }
   }
 }
+/* stylelint-disable */
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form__input[type='number'] {
+    -moz-appearance: textfield;
+}
+/* stylelint-enable */
