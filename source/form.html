@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
     <svg style="display: none">
-      <symbol id="email" viewBox="0 0 20 15">
+      <symbol id="mail" viewBox="0 0 20 15">
         <line x1="1.65" y1="5.84766" x2="1.65" y2="13.8477" stroke="currentColor" stroke-width="1.3"/>
         <line x1="18.65" y1="5.84766" x2="18.65" y2="13.8477" stroke="currentColor" stroke-width="1.3"/>
         <line x1="1" y1="13.1977" x2="19" y2="13.1977" stroke="currentColor" stroke-width="1.3"/>
@@ -49,7 +49,8 @@
             <img class="page-header__img" src="img/logo-text.svg" width="101" height="18" alt="Текстовый логотип компании Cat Energy">
           </a>
         </div>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <!-- main-nav c модификатором closed закрывает меню при включенном js, main-nav c модификатором nojs открывает меню при отключенном js -->
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -80,7 +81,7 @@
                 <ul class="form__list ">
                   <li class="form__item form__item-info">
                     <label class="form__label form__label-info" for="name">Имя:*</label>
-                    <input class="form__input form__input-info form__input--name" type="text" name="name" placeholder="Барсик" id="name" required>
+                    <input class="form__input form__input-info form__input--name" type="text" name="name" placeholder="Барсик" id="name" maxlength="46" required>
                   </li>
                   <li class="form__item  form__item-info">
                     <label class="form__label form__label-info" for="weight">Вес (кг):*</label>
@@ -96,15 +97,15 @@
                 <ul class="form__list">
                   <li class="form__item form__item-purpose form__filter">
                     <input class="form__input form__input-radio form__input--slim visually-hidden checked" type="radio" name="choose-purpose" value="purpose-slim" id="slim" checked>
-                    <label class="form__label form__label-radio form__slim" for="slim">Похудение</label>
+                    <label class="form__label form__label-radio form__slim" for="slim" tabindex="0">Похудение</label>
                   </li>
                   <li class="form__item form__item-purpose form__filter">
                     <input class="form__input form__input-radio visually-hidden" type="radio" name="choose-purpose" value="purpose-srtong" id="strong">
-                    <label class="form__label form__label-radio" for="strong">Набор массы</label>
+                    <label class="form__label form__label-radio" for="strong" tabindex="0">Набор массы</label>
                   </li>
                   <li class="form__item form__item-purpose form__filter">
                     <input class="form__input form__input-radio visually-hidden" type="radio" name="choose-purpose" value="advice" id="unknown">
-                    <label class="form__label form__label-radio" for="unknown">Не знаю (нужен ваш совет)</label>
+                    <label class="form__label form__label-radio" for="unknown" tabindex="0">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
               </fieldset>
@@ -116,14 +117,14 @@
               <ul class="form__list form__list-owner">
                 <li class="form__item form__item-owner">
                   <label class="form__label form__label-owner form__email" for="email">E-mail:*</label>
-                  <input class="form__input form__input-owner form__input-mail" type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
+                  <input class="form__input form__input-owner form__input-mail" type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" maxlength="40" required>
                   <svg class="form__img-mail" width="20" height="15" aria-hidden="true" focusable="false">
-                    <use xlink:href="#email"></use>
+                    <use xlink:href="#mail"></use>
                   </svg>
                 </li>
                 <li class="form__item form__item-owner">
                   <label class="form__label form__label-owner form__phone" for="number">Телефон:*</label>
-                  <input class="form__input form__input-owner form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
+                  <input class="form__input form__input-owner form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" maxlength="21" required>
                   <svg class="form__img-phone" width="20" height="21" aria-hidden="true" focusable="false">
                     <use xlink:href="#phone"></use>
                   </svg>

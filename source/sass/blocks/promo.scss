@@ -2,46 +2,31 @@
   @include osvald(400);
   position: relative;
   color: $basic-white;
-  padding-top: 27px;
+  padding-top: 25px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 22px;
   background:
-    url("../img/index-can-mobile 1.png") 50% 80% no-repeat,
     url("../img/green-cat.jpg") 50% 0 no-repeat,
     linear-gradient(to bottom, $dark-green 0%, $dark-green 63%, $basic-white 63%);
-  background-size: auto, 320px 302px, auto;
+  background-size: 320px 302px, auto;
 
   @media (min-resolution: 2dppx) {
     background:
-      url("../img/index-can-mobile 1@2x.png") 50% 80% no-repeat,
       url("../img/green-cat@2x.jpg") 50% 0 no-repeat,
-      linear-gradient(to bottom, $dark-green 0%, $dark-green 63%, $basic-white 63%);
-    background-size: 280px auto, 320px 302px, auto;
+      linear-gradient(to bottom, $dark-green 0%, $dark-green 38%, $basic-white 38%);
+    background-size: 320px 302px, auto;
   }
 
   @media (min-width: $tablet-width) {
-    background: url("../img/index-can-tablet 1.png") center 258px no-repeat;
-    background-size: auto 609px;
+    background: none;
     color: $basic-black;
     padding-top: 58px;
     margin-bottom: 0;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/index-can-tablet 1@2x.png") center 258px no-repeat;
-      background-size: 709px auto;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../img/index-can.png") 63% 15% no-repeat;
-    background-size: auto 499px;
     padding-top: 106px;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/index-can@2x.png") 63% 14% no-repeat;
-      background-size: 552px auto;
-    }
   }
 }
 
@@ -49,6 +34,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -79,7 +65,7 @@
   text-transform: uppercase;
 
   @include offset(0, 0);
-  padding-bottom: 300px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
@@ -114,5 +100,23 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     margin-bottom: 267px;
+  }
+}
+
+.promo__food-img {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    top: -82px;
+    left: 558px;
+    z-index: 0;
   }
 }

@@ -59,7 +59,7 @@ textarea::placeholder {
 }
 
 .form__input {
-  border: 1px solid $special-light-grey;
+  border: 1px solid $the-lightest-grey;
   box-sizing: border-box;
 
   &:hover {
@@ -113,11 +113,6 @@ textarea::placeholder {
 .form__input-info,
 .form__message-field,
 .form__input-owner {
-  &:invalid {
-    border: none;
-    outline: 1px solid $basic-red;
-  }
-
   &:focus {
     outline: 1px solid $special-dark-grey;
   }
@@ -153,6 +148,7 @@ textarea::placeholder {
 }
 
 .form__aditional label {
+  color: $basic-black;
   padding-bottom: 4px;
 }
 
@@ -178,6 +174,10 @@ textarea::placeholder {
     left: -60px;
     top: -6px;
   }
+}
+
+.form__label-radio {
+  color: $almost-black;
 }
 
 .form__input-radio + label:hover::before,
@@ -232,7 +232,7 @@ textarea::placeholder {
   box-sizing: border-box;
   resize: none;
   outline: none;
-  border-color: $the-lightest-grey;
+  border: 1px solid $the-lightest-grey;
 
   &:hover {
     border-color: $special-light-grey;
@@ -285,7 +285,7 @@ textarea::placeholder {
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -418,14 +418,6 @@ textarea::placeholder {
     padding-top: 5px;
   }
 
-  &:disabled + svg {
-    color: $basic-green;
-  }
-
-  &:invalid + svg {
-    color: $basic-red;
-  }
-
   @media (min-width: $tablet-width) {
     padding-left: 18px;
 
@@ -505,6 +497,12 @@ textarea::placeholder {
     box-sizing: border-box;
   }
 }
+
+.form__label-radio:focus + label::before,
+.form__input-checkbox:focus + label {
+  outline: 2px solid $basic-black;
+}
+
 
 .form__button-container {
   display: flex;
@@ -588,7 +586,7 @@ textarea::placeholder {
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 22px;
+    padding-bottom: 21px;
   }
 }
 
@@ -614,10 +612,6 @@ textarea::placeholder {
   &:last-of-type {
     padding-bottom: 0;
   }
-}
-
-.form__disabled {
-  opacity: 0.3;
 }
 
 /*Зеленая линия*/
@@ -648,4 +642,37 @@ textarea::placeholder {
 .form__input[type='number'] {
     -moz-appearance: textfield;
 }
+
+.form__input-owner::-moz-placeholder,
+.form__input-info::-moz-placeholder,
+.form__message-field::-moz-placeholder {
+  color: $special-dark-grey;
+  opacity: 1;
+}
 /* stylelint-enable */
+
+/*Класс применяется при состоянии invalid у обязательных для заполнения полей*/
+.invalid {
+  border: 1px solid $basic-red;
+  box-shadow: 0 0 1px $basic-red;
+}
+/*Применяется при состоянии invalid для svg*/
+.invalid-svg {
+  color: $basic-red;
+}
+
+/*Класс применяется при состоянии disabled у радиокнопок и чекбоксов*/
+.disabled {
+  opacity: 0.3;
+}
+
+/*Класс применяется при состоянии disabled у полей для заполнения телефона и мейла*/
+.disabled-info {
+  border-color: 1px solid $special-dark-grey;
+  box-shadow: 0 0 1px $special-dark-grey;
+}
+
+/*Класс применяется при состоянии disabled для svg в полях телефона и мейла*/
+.disabled-info-svg {
+  color: $basic-green;
+}

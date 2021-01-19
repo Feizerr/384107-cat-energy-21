@@ -1,6 +1,7 @@
 .catalog-table {
   @include fonts(12px, 15px);
   @include offset(0, 0);
+  color: $special-dark-grey;
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {

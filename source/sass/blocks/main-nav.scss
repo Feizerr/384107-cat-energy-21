@@ -4,15 +4,17 @@
 
 .main-nav__list {
   @include list-reset();
-  @include osvald(500);
+  @include osvald-medium(500);
   @include fonts(20px, 20px);
   text-transform: uppercase;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
+    @include osvald(400);
     @include fonts(18px, 24px);
     flex-direction: row;
     justify-content: space-between;

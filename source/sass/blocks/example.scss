@@ -99,6 +99,7 @@
 }
 
 .example__text {
+  color: $special-dark-grey;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -214,6 +215,7 @@
 .example__description {
   @include fonts(12px, 12px);
   @include offset(0, 0);
+  color: $special-dark-grey;
   position: absolute;
   top: 45px;
   left: 23px;

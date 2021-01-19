@@ -101,6 +101,7 @@
 .instruction__text {
   @include offset(0, 0);
   position: relative;
+  color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
     padding-top: 152px;

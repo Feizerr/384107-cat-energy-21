@@ -77,9 +77,6 @@
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 30px);
-    /*&:first-of-type {
-      padding-left: 60px;
-    }*/
   }
 
   @media (min-width: $desktop-width) {
@@ -94,7 +91,7 @@
 
   &:active {
     border: none;
-    outline: none;
+    border-bottom: 1px solid transparent;
   }
 }
 

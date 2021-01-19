@@ -43,6 +43,11 @@
   }
 }
 
+.catalog__link-product {
+  @include link();
+  color: $almost-black;
+}
+
 .catalog__item {
   display: flex;
   justify-content: flex-start;
@@ -186,6 +191,7 @@
 .catalog__text {
   @include fonts(12px, 16px);
   @include offset(0, 0);
+  color: $special-dark-grey;
   margin-bottom: 20px;
   width: 280px;
   text-align: center;
@@ -227,6 +233,7 @@
 }
 
 .catalog__show-more {
+  color: $special-dark;
   width: 280px;
   text-align: center;
   padding-top: 59px;
@@ -293,7 +300,7 @@
 
 .catalog__button-more {
   @include offset(0, 0);
-  color: $almost-black;
+  color: $special-dark-grey;
   background-color: $basic-grey;
   padding-top: 10px;
   padding-bottom: 10px;
